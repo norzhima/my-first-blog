@@ -5,7 +5,8 @@
         <div class="hut_post">
             {% if post.published_date %}
                 <p id="datetimes_post">
-                    {{ post.published_date }}
+                    Дата публикации: {{ post.published_date|date:"d.m.Y" }}
+                    {{ post.published_date|time:"G:i" }}
                 </p>
             {% endif %}
             {% if user.is_authenticated %}
