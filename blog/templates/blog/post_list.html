@@ -3,10 +3,12 @@
 {% block content %}
     {% for post in posts %}
         <div class="post">
-            <div class="date">
-                Дата пудликации: {{ post.published_date|date:"d.m.Y" }}
-                {{ post.published_date|time:"G:i" }}
-            </div>
+            {% if post.published_date %}
+                <p id="datetimes_post">
+                    Дата публикации: {{ post.published_date|date:"d.m.Y" }}
+                    {{ post.published_date|time:"G:i" }}
+                </p>
+            {% endif %}<br/>
             <h1><a href="{% url 'post_detail' pk=post.pk %}" id="titlestyle">{{ post.title }}</a></h1>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
