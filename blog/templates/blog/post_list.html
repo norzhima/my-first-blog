@@ -4,7 +4,8 @@
     {% for post in posts %}
         <div class="post">
             <div class="date">
-                published: {{ post.published_date }}
+                Дата пудликации: {{ post.published_date|date:"d.m.Y" }}
+                {{ post.published_date|time:"G:i" }}
             </div>
             <h1><a href="{% url 'post_detail' pk=post.pk %}" id="titlestyle">{{ post.title }}</a></h1>
             <p>{{ post.text|linebreaksbr }}</p>
