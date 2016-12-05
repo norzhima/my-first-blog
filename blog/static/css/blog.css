@@ -41,8 +41,14 @@ h1, h2, h3, h4 {
 .top-menu, .top-menu:hover, .top-menu:visited {
     color: #ffffff;
     float: right;
-    font-size: 26pt;
+    font-size: 16pt;
     margin-right: 20px;
+    margin-top: auto;
+}
+
+.top-menu a {
+    color: #806F71;
+
 }
 
 .post {
@@ -62,9 +68,7 @@ h1, h2, h3, h4 {
     margin-right: 20px;
 }
 
-.top-menu {
-    padding-top: 25px;
-}
+
 
 #titlestyle {
     color: #9E8A8E;
@@ -72,4 +76,8 @@ h1, h2, h3, h4 {
 
 #publishstyle {
     float: left;
+}
+
+#loginstyle {
+    margin-top: 60px;
 }
