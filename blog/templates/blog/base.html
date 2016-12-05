@@ -11,8 +11,10 @@
         <div class="page-header">
             {% if user.is_authenticated %}
                 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+                <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
             {% endif %}
             <h1><a href="/">Блог Норжимы Чагдуровой</a></h1>
+            <h3>Мои увлечения и хобби</h3>
         </div>
         <div class="content container">
             <div class="row">

@@ -12,6 +12,11 @@
     text-decoration: none;
 }
 
+.page-header h3 {
+    font-size: 24pt;
+    color: #806F71;
+}
+
 .content {
     margin-left: 40px;
 }
@@ -54,7 +59,7 @@ h1, h2, h3, h4 {
 }
 
 .hut_post {
-    padding-bottom: 20px;
+    margin-right: 20px;
 }
 
 .top-menu {
@@ -63,4 +68,8 @@ h1, h2, h3, h4 {
 
 #titlestyle {
     color: #9E8A8E;
+}
+
+#publishstyle {
+    float: left;
 }
