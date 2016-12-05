@@ -1,7 +1,9 @@
 .page-header {
-    background-color: #0BA18F;
-    margin-top: 0;
-    padding: 20px 20px 20px 50px;
+    background-color: #654E56;
+    background-image: url(images/back.jpg);
+    padding: 40px 20px 45px 50px;
+    margin: auto;
+
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -60,5 +62,5 @@ h1, h2, h3, h4 {
 }
 
 #titlestyle {
-    color: #0B9C8B;
+    color: #9E8A8E;
 }
